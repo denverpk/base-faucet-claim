@@ -9,7 +9,7 @@ export default function FaucetApp() {
   const [history, setHistory] = useState([]);
 
   const provider = new ethers.providers.JsonRpcProvider('https://rpc.ankr.com/base');
-  const faucetPrivateKey = '<FAUCET_PRIVATE_KEY>'; // Replace with your faucet wallet private key
+  const faucetPrivateKey = '<0xc37bb6ee6cc890ee8180aaef68e016a7fa144cb42596995a16160ff26ce076c7>'; // Replace with your faucet wallet private key
   const signer = new ethers.Wallet(faucetPrivateKey, provider);
 
   const checkFaucetBalance = async () => {
